@@ -9,8 +9,8 @@ import Button from "../Button";
 const images = [slider1, slider2, slider3];
 const titles = [
   "Unlocking the Taste\nof Tradition",
-  "Embracing New Flavors\nin Every Dish",
-  "A Culinary Journey\nThrough Time",
+  "Unlocking the Taste\nof Tradition",
+  "Unlocking the Modern\nInterpretation",
 ];
 const descriptions = [
   [
@@ -64,7 +64,7 @@ const Carousel = () => {
                       : { opacity: 0, y: -100 }
                   }
                   transition={{ duration: 0.7 }}
-                  className="text-white text-center md:px-8 lg:px-0 font-dm-serif-display text-[14.5px] md:text-[80.5px] lg:text-[108.5px] font-normal md:leading-[122.3px] tracking-[-0.385px]"
+                  className="text-white text-center md:px-8 lg:px-0 dm-serif-display-regular text-[14.5px] md:text-[80.5px] lg:text-[108.5px] font-normal md:leading-[122.3px] tracking-[-0.385px]"
                 >
                   {titles[index].split("\n").map((line, idx) => (
                     <span key={idx}>

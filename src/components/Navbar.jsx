@@ -26,6 +26,11 @@ const Navbar = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
+
+  const dropdownPaths = ["/season", "/flavor", "/ingredient"];
+  const isApplicationsActive = dropdownPaths.includes(location.pathname);
+
+
   return (
     <header>
       <div className="bg-[#fff] w-full flex flex-col md:flex md:flex-row justify-between items-center 2xl:px-[120px] xl:px-[80px] lg:px-[50px] px-[30px]  py-[10px]">
@@ -143,9 +148,9 @@ const Navbar = () => {
         <div className="hidden md:flex items-center justify-between space-x-4 w-full">
           <Link
             to="/"
-            className={`text-black font-poppins text-sm font-semibold leading-7 capitalize relative
+            className={`text-black font-poppins text-sm hover:font-semibold font-normal leading-7 capitalize relative
     transition-all duration-150 ease-in 
-    ${location.pathname === "/" ? "font-bold" : ""}`}
+    ${location.pathname === "/" ? "font-semibold" : ""}`}
           >
             Home
             <span
@@ -158,8 +163,8 @@ const Navbar = () => {
           <span className="w-[1px] h-[29px] bg-[#000]"></span>
           <Link
             to="/about"
-            className={`text-black font-poppins text-sm font-semibold  leading-7 capitalize relative
-          ${location.pathname === "/about" ? "font-bold" : ""}`}
+            className={`text-black font-poppins text-sm font-normal hover:font-semibold leading-7 capitalize relative
+          ${location.pathname === "/about" ? "font-semibold" : ""}`}
           >
             About Us
             <span
@@ -173,31 +178,29 @@ const Navbar = () => {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
             className="relative group"
-            
           >
             <Link
-              className={`text-black font-poppins text-sm font-semibold leading-7 pb-4 capitalize relative `}
+              className={`text-black font-poppins text-sm font-normal hover:font-semibold leading-7 pb-4 capitalize relative ${
+                isApplicationsActive ? "font-semibold" : ""
+              }`}
             >
               Applications & Solutions
-              {/* Show dot if /applications is active or any dropdown link is selected */}
-              {/* <span
-            className={`absolute block w-1 h-1 bg-black left-1/2 transform -translate-x-1/2 bottom-0 transition-opacity `}
-          ></span> */}
             </Link>
+            {isApplicationsActive && (
+              <span className="absolute block w-1 h-1 bg-black left-1/2 transform -translate-x-1/2 bottom-[-4px]"></span>
+            )}
             {isDropdownOpen && (
               <div className="absolute left-[-960px] mt-3">
-                {/* Pass handleDropdownLinkClick to DropDown to handle active link state */}
-                <DropDown onLinkClick={handleDropdownLinkClick} />
+                <DropDown />
               </div>
             )}
           </div>
-
           <span className="w-[1px] h-[29px] bg-[#000]"></span>
 
           <Link
             to="/contact"
-            className={`text-black font-poppins text-sm font-semibold  transition-all dura leading-7 capitalize relative
-          ${location.pathname === "/contact" ? "" : ""}`}
+            className={`text-black font-poppins text-sm font-normal hover:font-semibold transition-all dura leading-7 capitalize relative
+          ${location.pathname === "/contact" ? "font-semibold" : ""}`}
             style={{ width: "auto" }}
           >
             Contact Us
@@ -213,29 +216,29 @@ const Navbar = () => {
           <div className="md:hidden flex flex-col items-center  bg-[#FEA821] p-4 absolute top-[270px] left-0 right-0 z-10">
             <Link
               to="/"
-              className="text-black font-poppins  text-sm font-semibold leading-7 capitalize"
+              className="text-black font-poppins  text-sm font-normal leading-7 capitalize"
               onClick={toggleMenu}
             >
               Home
             </Link>
-            90
+            
             <Link
               to="/about"
-              className="text-black font-poppins text-sm font-semibold leading-7 capitalize"
+              className="text-black font-poppins text-sm font-normal leading-7 capitalize"
               onClick={toggleMenu}
             >
               About Us
             </Link>
             <Link
-              to="/applications"
-              className="text-black font-poppins text-sm font-semibold leading-7 capitalize"
+              to="/flavor"
+              className="text-black font-poppins text-sm font-normal leading-7 capitalize"
               onClick={toggleMenu}
             >
               Applications & Solutions
             </Link>
             <Link
               to="/contact"
-              className="text-black font-poppins text-sm font-semibold leading-7 capitalize"
+              className="text-black font-poppins text-sm font-normal leading-7 capitalize"
               onClick={toggleMenu}
             >
               Contact Us

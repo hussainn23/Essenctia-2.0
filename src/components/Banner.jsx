@@ -15,7 +15,7 @@ const Banner = ({ bannerSrc, title }) => {
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="flex flex-col gap-[22px]">
           <h1
-            className="text-white text-center font-dm-serif-display text-[30.5px] md:text-[80.5px] lg:text-[108.5px] font-normal leading-[30.3px] md:leading-[122.3px] tracking-[-0.385px]"
+            className="text-white text-center dm-serif-display-regular text-[30.5px] md:text-[80.5px] lg:text-[108.5px] font-normal leading-[30.3px] md:leading-[122.3px] tracking-[-0.385px]"
           >
             {title}
           </h1>

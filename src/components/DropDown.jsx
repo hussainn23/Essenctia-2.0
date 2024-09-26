@@ -27,7 +27,7 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Dairy
             </p>
-            <Link className="cursor-pointer" to="/flavor" onClick={() => onLinkClick('/flavor')}>
+            <Link to="/flavor" onClick={() => onLinkClick('/flavor')} className={({ isActive }) => (isActive ? 'cursor-pointer nav-link active' : 'nav-link')}>
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All
@@ -74,7 +74,7 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Fajita
             </p>
-            <Link className="cursor-pointer" to="/season" onClick={() => onLinkClick('/season')}>
+            <Link  className={({ isActive }) => (isActive ? 'cursor-pointer nav-link active' : 'nav-link')} to="/season" onClick={() => onLinkClick('/season')}>
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All
@@ -118,7 +118,7 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Anti-caking agents
             </p>
-            <Link className="cursor-pointer" to="/ingredient" onClick={() => onLinkClick('/ingredient')}>
+            <Link  className={({ isActive }) => (isActive ? 'cursor-pointer nav-link active' : 'nav-link')} to="/ingredient" onClick={() => onLinkClick('/ingredient')}>
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All

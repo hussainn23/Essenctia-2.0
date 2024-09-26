@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import app4 from "../images/app4.png";
 import right from "../images/right.svg";
 import Strip from "../components/Strip";
+import { Link } from "react-router-dom";
 
 const Compond = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
