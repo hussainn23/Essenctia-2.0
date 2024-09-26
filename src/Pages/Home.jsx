@@ -63,13 +63,13 @@ const Home = () => {
               subHeading1={"Emulsions"}
               subHeading2={
                 <>
-                  Liquid Flavors
-                  <span className="block md:hidden">
-                    <br />
-                  </span>
+                 <div className="flex justify-center">
+                 Liquid Flavors 
+                  
                   <span className="hidden md:block">
                     (Water and Oil Soluble)
                   </span>
+                 </div>
                 </>
               }
               subHeading3={"Powder Flavors"}

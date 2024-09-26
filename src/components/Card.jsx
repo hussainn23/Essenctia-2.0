@@ -4,7 +4,7 @@ import arrow from "../images/arrow.svg";
 const Card = ({ imgUrl, category, heading, subHeading1, subHeading2, subHeading3, className  }) => {
   return (
     <div className={`your-default-class ${className} `}>
-      <div className=" group 2xl:w-[396px] w-[240px]  md:w-[350px] 2xl:h-[548px] h-[450px] md:h-[520px]  flex-shrink-0 rounded-[8.741px] bg-white shadow-[17.481px_26.222px_30.592px_rgba(0,0,0,0.10)] hover:border border-[#FF8C32] transition-all ease-in-out duration-300 ">
+      <div className=" group 2xl:w-[396px] w-[240px] cursor-pointer  md:w-[350px] 2xl:h-[548px] h-[450px] md:h-[520px]  flex-shrink-0 rounded-[8.741px] bg-white shadow-[17.481px_26.222px_30.592px_rgba(0,0,0,0.10)] hover:border border-[#FF8C32] transition-all ease-in-out duration-300 ">
         <div className="flex justify-center ">
           <img
             src={imgUrl}

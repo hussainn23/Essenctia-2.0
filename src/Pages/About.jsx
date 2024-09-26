@@ -27,13 +27,13 @@ const About = () => {
 
           <div className="flex flex-wrap lg:justify-between justify-center ">
             <div className="flex flex-col ">
-              <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px]  flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]">
+              {/* <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px]  flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]"> */}
                 <img
                   src={img1}
                   alt="user1"
-                  className="w-[200px] md:w-auto"
+                  className=" "
                 />
-              </div>
+              {/* </div> */}
               <div className="pt-[50px] pb-[130px]">
                 <h5 className="text-[#06113C] text-center font-lexend-deca text-[25px] md:text-[39px] font-bold leading-[2.5px] md:leading-[32.5px]">
                   Mujahid Khokhar
@@ -45,13 +45,13 @@ const About = () => {
             </div>
 
             <div className="flex flex-col">
-              <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]">
+              {/* <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]"> */}
                 <img
                   src={img2}
                   alt="user1"
-                  className="w-[240px] md:w-auto"
+                  className=""
                 />
-              </div>
+              {/* </div> */}
               <div className="pt-[50px] pb-[130px]">
                 <h5 className="text-[#06113C] text-center font-lexend-deca text-[25px] md:text-[39px] font-bold leading-[2.5px] md:leading-[32.5px]">
                   Mudassar Ranjha
@@ -62,13 +62,13 @@ const About = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]">
+              {/* <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]"> */}
                 <img
                   src={img3}
                   alt="user1"
-                  className="w-[180px] md:w-auto"
+                  className=""
                 />
-              </div>
+              {/* </div> */}
               <div className="pt-[50px] pb-[130px]">
                 <h5 className="text-[#06113C] text-center font-lexend-deca text-[25px] md:text-[39px] font-bold leading-[2.5px] md:leading-[32.5px]">
                   Kashif Mushtaq
@@ -79,13 +79,13 @@ const About = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]">
+              {/* <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]"> */}
                 <img
                   src={img4}
                   alt="user1"
-                  className="w-[190px] md:w-auto"
+                  className=""
                 />
-              </div>
+              {/* </div> */}
               <div className="pt-[50px] pb-[130px]">
                 <h5 className="text-[#06113C] text-center font-lexend-deca text-[25px] md:text-[39px] font-bold leading-[2.5px] md:leading-[32.5px]">
                   Sheikh Usman Salem
