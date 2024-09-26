@@ -12,7 +12,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const location = useLocation();
-  const [activeDropdownLink, setActiveDropdownLink] = useState(null); 
+  const [activeDropdownLink, setActiveDropdownLink] = useState(null);
 
   const handleDropdownLinkClick = (linkPath) => {
     setActiveDropdownLink(linkPath);
@@ -173,38 +173,32 @@ const Navbar = () => {
             onMouseEnter={() => setIsDropdownOpen(true)}
             onMouseLeave={() => setIsDropdownOpen(false)}
             className="relative group"
+            
           >
             <Link
-              to="/applications"
-              className={`text-black font-poppins text-sm font-semibold  leading-7 capitalize relative
-      ${location.pathname === "/applications" ? "font-bold" : ""}`}
+              className={`text-black font-poppins text-sm font-semibold leading-7 pb-4 capitalize relative `}
             >
               Applications & Solutions
-              <span
-                className={`absolute block w-1 h-1 bg-black left-1/2 transform -translate-x-1/2 bottom-0 transition-opacity ${
-                  location.pathname === '/applications' || activeDropdownLink
-                    ? "opacity-100"
-                    : "opacity-0"
-                }`}
-              ></span>
+              {/* Show dot if /applications is active or any dropdown link is selected */}
+              {/* <span
+            className={`absolute block w-1 h-1 bg-black left-1/2 transform -translate-x-1/2 bottom-0 transition-opacity `}
+          ></span> */}
             </Link>
             {isDropdownOpen && (
-              <div className="absolute left-[-500px]">
-                 <DropDown onLinkClick={handleDropdownLinkClick} />
-               </div>
+              <div className="absolute left-[-960px] mt-3">
+                {/* Pass handleDropdownLinkClick to DropDown to handle active link state */}
+                <DropDown onLinkClick={handleDropdownLinkClick} />
+              </div>
             )}
           </div>
 
           <span className="w-[1px] h-[29px] bg-[#000]"></span>
 
-
-
-
           <Link
             to="/contact"
             className={`text-black font-poppins text-sm font-semibold  transition-all dura leading-7 capitalize relative
           ${location.pathname === "/contact" ? "" : ""}`}
-          style={{ width: 'auto' }}
+            style={{ width: "auto" }}
           >
             Contact Us
             <span
@@ -215,25 +209,16 @@ const Navbar = () => {
           </Link>
         </div>
 
-        
         {isMenuOpen && (
           <div className="md:hidden flex flex-col items-center  bg-[#FEA821] p-4 absolute top-[270px] left-0 right-0 z-10">
-
-
-
-
             <Link
               to="/"
               className="text-black font-poppins  text-sm font-semibold leading-7 capitalize"
               onClick={toggleMenu}
             >
               Home
-            </Link>90
-
-
-
-
-
+            </Link>
+            90
             <Link
               to="/about"
               className="text-black font-poppins text-sm font-semibold leading-7 capitalize"

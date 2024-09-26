@@ -5,7 +5,7 @@ import img2 from "../images/drop2.png";
 
 const DropDown = ({ onLinkClick }) => {
   return (
-    <div className="absolute h-[494px] flex justify-between items-center flex-shrink-0 border-t border-t-[#41BA90] px-20  bg-white shadow-md z-50">
+    <div className="absolute w-[1910px] h-[494px] flex justify-between items-center flex-shrink-0 border-t border-t-[#41BA90] px-20  bg-white shadow-md z-50">
       <div className="inline-flex h-[398px] items-start gap-[66px] flex-shrink-0">
         <div className="flex w-[200px] flex-col items-start gap-[36px]">
           <h3 className="text-[#454545] font-dm-sans text-[24px] font-normal leading-normal">
@@ -27,7 +27,7 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Dairy
             </p>
-            <Link className="cursor-pointer" to="/flavor">
+            <Link className="cursor-pointer" to="/flavor" onClick={() => onLinkClick('/flavor')}>
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All
@@ -74,7 +74,7 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Fajita
             </p>
-            <Link className="cursor-pointer" to="/season">
+            <Link className="cursor-pointer" to="/season" onClick={() => onLinkClick('/season')}>
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All
@@ -118,7 +118,7 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Anti-caking agents
             </p>
-            <Link className="cursor-pointer" to="/ingredient">
+            <Link className="cursor-pointer" to="/ingredient" onClick={() => onLinkClick('/ingredient')}>
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All
@@ -144,10 +144,10 @@ const DropDown = ({ onLinkClick }) => {
       </div>
       <div className="flex gap-5">
         <div>
-          <img src={img1} alt="imjg" className="rounded-lg w-[780px] h-[440px]" />
+          <img src={img1} alt="imjg" className="rounded-lg " />
         </div>
         <div>
-          <img src={img2} alt="imjg" className="rounded-lg w-[780px] h-[440px]" />
+          <img src={img2} alt="imjg" className="rounded-lg " />
         </div>
       </div>
     </div>
