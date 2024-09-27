@@ -38,7 +38,7 @@ const Contact = () => {
         <ContactCard
           imgUrl={location}
           title={"Our location"}
-          className=" mt-10 xl:mt-0"
+          className=" mt-10 xl:mt-0 px-2 md:px-0"
           numbers={[
             <>
               E-2, Al Qadir Heights, Garden Town{" "}
@@ -86,14 +86,14 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      {/* <div className="flex justify-center pt-[60px] pb-[100px]">
+      <div className="flex justify-center pt-[60px] pb-[100px]">
         <Button
           text={"Submit"}
-          padding="p-[4px_4px_4px_161px]"
-          gap="gap-[134px]"
+          padding="lg:p-[4px_4px_4px_161px] md:p-[4px_4px_4px_100px] p-[4px_4px_4px_50px]"
+          gap="lg:gap-[134px] md:gap-[100px] gap-[30px]"
         />
-      </div> */}
-      <div className="flex justify-center pb-[80px] px-[30px] lg:px-[120px]">
+      </div>
+      <div className="flex justify-center pb-[80px] px-[30px] lg:px-[120px] ">
         <div className=" 2xl:w-[1687px] w-full md:h-[447px] h-[247px] flex-shrink-0 rounded-[30px] overflow-hidden ">
           {/* You can replace the following with an actual map implementation */}
           <iframe

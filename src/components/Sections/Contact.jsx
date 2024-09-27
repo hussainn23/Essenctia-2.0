@@ -46,28 +46,28 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="First Name"
-                className="inline-flex h-[40px] md:h-[71px] pl-[30px] 2xl:pr-[290px] mb-6 md:mb-0 justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
+                className="inline-flex  h-[71px] md:h-[71px] pl-[30px] 2xl:pr-[290px] mb-6 md:mb-0 justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                className="inline-flex h-[40px] md:h-[71px] pl-[30px] 2xl:pr-[290px] justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
+                className="inline-flex  h-[71px] md:h-[71px] pl-[30px] 2xl:pr-[290px] justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
               />
             </div>
             <div>
               <input
                 type="eamil"
                 placeholder="Email Address"
-                className="inline-flex h-[40px] md:h-[71px] pl-[30px] w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
+                className="inline-flex  h-[71px] md:h-[71px] pl-[30px] w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
               />
               <input
                 type="number"
                 placeholder="Phone Number"
-                className="inline-flex h-[40px] md:h-[71px] pl-[30px] w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
+                className="inline-flex  h-[71px] md:h-[71px] pl-[30px] w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
               />
               <textarea
                 placeholder="Write message"
-                className="flex w-full h-[100px] md:h-[199px] p-[18px] pl-[30px] items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] resize-none focus:outline-none focus:border-none"
+                className="flex w-full h-[150px] md:h-[199px] p-[18px] pl-[30px] items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] resize-none focus:outline-none focus:border-none"
               ></textarea>
             </div>
           </div>

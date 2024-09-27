@@ -64,7 +64,7 @@ const Carousel = () => {
                       : { opacity: 0, y: -100 }
                   }
                   transition={{ duration: 0.7 }}
-                  className="text-white text-center md:px-8 lg:px-0 dm-serif-display-regular text-[14.5px] md:text-[80.5px] lg:text-[108.5px] font-normal md:leading-[122.3px] tracking-[-0.385px]"
+                  className="text-white text-center md:px-8 lg:px-0 dm-serif-display-regular text-[20.5px] md:text-[80.5px] lg:text-[108.5px] font-normal md:leading-[122.3px] tracking-[-0.385px]"
                 >
                   {titles[index].split("\n").map((line, idx) => (
                     <span key={idx}>
@@ -108,7 +108,7 @@ const Carousel = () => {
                   {descriptions[index].map((line, idx) => (
                     <span key={idx}>
                       {line}
-                      <br />
+                      <br className="hidden lg:block" />
                     </span>
                   ))}
                 </motion.p>
@@ -154,7 +154,7 @@ const Carousel = () => {
         ))}
       </div>
 
-      <div className="absolute inset-x-0 bottom-4 flex justify-center ">
+      {/* <div className="absolute inset-x-0 bottom-4 flex justify-center ">
         {images.map((_, index) => (
           <button
             key={index}
@@ -164,7 +164,7 @@ const Carousel = () => {
             onClick={() => setCurrentSlide(index)}
           />
         ))}
-      </div>
+      </div> */}
       <div className="hidden md:block">
         <motion.button
           key={currentSlide + totalSlides}
