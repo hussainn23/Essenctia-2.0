@@ -57,7 +57,7 @@ const About = () => {
                   Mudassar Ranjha
                 </h5>
                 <p className="text-[#454545] text-center font-lexend-deca text-[16px] md:text-[26px] font-normal leading-[14px] md:leading-[24px] pt-[30px]">
-                  Chief Executive Officer
+                Team Lead - Application<br /> & Development
                 </p>
               </div>
             </div>
