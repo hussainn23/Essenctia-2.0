@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import app1 from "../images/app1.png";
 import right from "../images/right.svg";
@@ -8,6 +8,10 @@ import { Link } from "react-router-dom";
 
 const Flavor = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const beverageItems = [
     "Beverage",

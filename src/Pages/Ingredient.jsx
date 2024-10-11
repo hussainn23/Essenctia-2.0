@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import app3 from "../images/app3.png";
 import right from "../images/right.svg";
@@ -10,6 +10,10 @@ const Ingredient = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const anotherPageItems = ["Acidity Regulators", "Anti-caking agents", "Leavening Agents", "Sweeteners", "Thickeners and Preservatives"];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleSelect = (index) => {
     setSelectedIndex(index);

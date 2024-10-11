@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import app2 from "../images/app2.png";
 import right from "../images/right.svg";
@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 
 const Season = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const contentMap = {
     0: {

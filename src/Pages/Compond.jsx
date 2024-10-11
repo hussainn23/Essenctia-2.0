@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import app4 from "../images/app4.png";
 import right from "../images/right.svg";
@@ -23,6 +23,10 @@ const Compond = () => {
   };
 
   const selectedContent = contentMap[selectedIndex];
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

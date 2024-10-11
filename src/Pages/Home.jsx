@@ -9,6 +9,7 @@ import Faq from "../components/Sections/Faq";
 import Contact from "../components/Sections/Contact";
 import Achievements from "../components/Sections/Achievements";
 import Slider from "../components/Sections/Slider";
+import { Link } from "react-router-dom";
 
 const cardVariants = {
   initial: { opacity: 0, y: 100 },
@@ -55,59 +56,66 @@ const Home = () => {
         </h4>
 
         <div className="flex flex-wrap md:justify-between justify-center pt-[160px]">
-          <CardWrapper>
-            <Card
-              imgUrl={card1}
-              category={"Category 1"}
-              heading={"Flavors"}
-              subHeading1={"Emulsions"}
-              subHeading2={
-                <>
-                 <div className="flex justify-center">
-                 Liquid Flavors 
-                  
-                  <span className="hidden md:block">
-                    (Water and Oil Soluble)
-                  </span>
-                 </div>
-                </>
-              }
-              subHeading3={"Powder Flavors"}
-            />
-          </CardWrapper>
-          <CardWrapper>
-            <Card
-              imgUrl={card2}
-              category={"Category 2"}
-              heading={"Seasonings"}
-              subHeading1={"Cheese Seasonings"}
-              subHeading2={"Achari"}
-              subHeading3={"Thai Chili"}
-              className="md:pt-0 pt-32"
-            />
-          </CardWrapper>
-          <CardWrapper>
-            <Card
-              imgUrl={card3}
-              category={"Category 3"}
-              heading={"Ingredients"}
-              subHeading1={"Thickeners and Preservatives"}
-              subHeading2={"Acidity Regulators"}
-              subHeading3={"Sweeteners"}
-              className="xl:pt-0 pt-32"
-            />
-          </CardWrapper>
-          <CardWrapper>
-            <Card
-              imgUrl={card4}
-              category={"Category 4"}
-              heading={"Compounds"}
-              subHeading1={"Cola"}
-              subHeading2={"Mango"}
-              subHeading3={"Pome"}
-              className="2xl:pt-0 pt-32"
-            />
-          </CardWrapper>
+          <Link to="/flavor">
+            <CardWrapper>
+              <Card
+                imgUrl={card1}
+                category={"Category 1"}
+                heading={"Flavors"}
+                subHeading1={"Emulsions"}
+                subHeading2={
+                  <>
+                    <div className="flex justify-center">
+                      Liquid Flavors
+                      <span className="hidden md:block">
+                        (Water and Oil Soluble)
+                      </span>
+                    </div>
+                  </>
+                }
+                subHeading3={"Powder Flavors"}
+              />
+            </CardWrapper>
+          </Link>
+          <Link to="/season">
+            <CardWrapper>
+              <Card
+                imgUrl={card2}
+                category={"Category 2"}
+                heading={"Seasonings"}
+                subHeading1={"Cheese Seasonings"}
+                subHeading2={"Achari"}
+                subHeading3={"Thai Chili"}
+                className="md:pt-0 pt-32"
+              />
+            </CardWrapper>
+          </Link>
+          <Link to="/ingredient">
+            <CardWrapper>
+              <Card
+                imgUrl={card3}
+                category={"Category 3"}
+                heading={"Ingredients"}
+                subHeading1={"Thickeners and Preservatives"}
+                subHeading2={"Acidity Regulators"}
+                subHeading3={"Sweeteners"}
+                className="xl:pt-0 pt-32"
+              />
+            </CardWrapper>
+          </Link>
+          <Link to="/componds">
+            <CardWrapper>
+              <Card
+                imgUrl={card4}
+                category={"Category 4"}
+                heading={"Compounds"}
+                subHeading1={"Cola"}
+                subHeading2={"Mango"}
+                subHeading3={"Pome"}
+                className="2xl:pt-0 pt-32"
+              />
+            </CardWrapper>
+          </Link>
         </div>
       </div>
       <div className="bg-[#F3F3F3] px-[30px] lg:px-[120px]">
