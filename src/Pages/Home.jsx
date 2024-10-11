@@ -98,24 +98,24 @@ const Home = () => {
                 heading={"Ingredients"}
                 subHeading1={"Thickeners and Preservatives"}
                 subHeading2={"Acidity Regulators"}
-                subHeading3={"Sweeteners"}
+                subHeading3={"Sweeteners"}  
                 className="xl:pt-0 pt-32"
               />
             </CardWrapper>
           </Link>
-          <Link to="/componds">
-            <CardWrapper>
-              <Card
-                imgUrl={card4}
-                category={"Category 4"}
-                heading={"Compounds"}
-                subHeading1={"Cola"}
-                subHeading2={"Mango"}
-                subHeading3={"Pome"}
-                className="2xl:pt-0 pt-32"
-              />
-            </CardWrapper>
-          </Link>
+         <Link to="/componds">
+         <CardWrapper>
+            <Card
+              imgUrl={card4}
+              category={"Category 4"}
+              heading={"Compounds"}
+              subHeading1={"Cola"}
+              subHeading2={"Mango"}
+              subHeading3={"Pome"}
+              className=" mt-32 custom-margin"
+            />
+          </CardWrapper>
+         </Link>
         </div>
       </div>
       <div className="bg-[#F3F3F3] px-[30px] lg:px-[120px]">
