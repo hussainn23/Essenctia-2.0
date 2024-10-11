@@ -83,7 +83,7 @@ const Contact = () => {
         <ContactCard
           imgUrl={location}
           title={"Our location"}
-          className="mt-10 xl:mt-0 px-2 md:px-0"
+          className="mt-10 lg:mt-10 xl:mt-0 px-2 md:px-0"
           numbers={[
             <>
               E-2, Al Qadir Heights, Garden Town
