@@ -57,40 +57,42 @@ const Contact = () => {
     <div>
       <ToastContainer />
       <Banner title={"Contact Us"} bannerSrc={contactImage} />
-      <div className="flex flex-wrap flex-row md:justify-between justify-center px-[30px] lg:px-[120px] pt-[118px]">
-        <ContactCard
-          imgUrl={phone}
-          title={"Phone Number"}
-          numbers={["042-37882089", "0348-8000158"]}
-        />
-        <div className="2xl:w-[537px] xl:w-[387px] lg:w-[387px] md:w-[350px] w-full h-[251px] mt-10 md:mt-0 flex justify-center items-center flex-shrink-0 rounded-[32.308px] bg-[#FEA821]">
-          <div>
-            <div className="flex justify-center items-center">
-              <div className="bg-[#fff] rounded-full flex w-[67.2px] h-[67.2px] p-[16.8px] justify-center items-center flex-shrink-0">
-                <img src={email} alt="email" />
+      <div className="md:justify-between justify-center px-[30px] lg:px-[120px] pt-[118px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <ContactCard
+            imgUrl={phone}
+            title={"Phone Number"}
+            numbers={["042-37882089", "0348-8000158"]}
+          />
+          <div className="w-auto h-[251px] flex justify-center items-center flex-shrink-0 rounded-[32.308px] bg-[#FEA821]">
+            <div>
+              <div className="flex justify-center items-center">
+                <div className="bg-[#fff] rounded-full flex w-[67.2px] h-[67.2px] p-[16.8px] justify-center items-center flex-shrink-0">
+                  <img src={email} alt="email" />
+                </div>
+              </div>
+              <p className="text-[#fff] text-center font-open-sans text-[25.015px] md:text-[31.015px] font-semibold leading-[34.117px] capitalize pt-3">
+                Email Address
+              </p>
+              <div className="flex flex-col pt-[18px]">
+                <span className="text-white text-center font-segoe-ui text-[18.677px] md:text-[20.677px] font-normal leading-[31.015px]">
+                  Info@essenctia.com
+                </span>
               </div>
             </div>
-            <p className="text-[#fff] text-center font-open-sans text-[25.015px] md:text-[31.015px] font-semibold leading-[34.117px] capitalize pt-3">
-              email address
-            </p>
-            <div className="flex flex-col pt-[18px]">
-              <span className="text-white text-center font-segoe-ui text-[18.677px] md:text-[20.677px] font-normal leading-[31.015px]">
-                Info@essenctia.com
-              </span>
-            </div>
           </div>
+          <ContactCard
+            imgUrl={location}
+            title={"Our Location"}
+            className="px-2 md:px-0"
+            numbers={[
+              <>
+                E-2, Al Qadir Heights, Garden Town
+                <br className="md:block hidden" /> Lahore 5400, Punjab Pakistan
+              </>,
+            ]}
+          />
         </div>
-        <ContactCard
-          imgUrl={location}
-          title={"Our location"}
-          className="mt-10 lg:mt-10 xl:mt-0 px-2 md:px-0"
-          numbers={[
-            <>
-              E-2, Al Qadir Heights, Garden Town
-              <br className="md:block hidden" /> Lahore 5400, Punjab Pakistan
-            </>,
-          ]}
-        />
       </div>
 
       <div className="lg:px-[120px] px-[30px] pt-[60px]">
