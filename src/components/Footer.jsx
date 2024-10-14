@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#F8F1EC] xl:h-[504px] flex flex-col justify-between flex-shrink-0 rounded-[12px] px-[30px] 2xl:px-[120px] xl:px-[80px] lg:px-[50px]  pt-[89px]">
-      <div class=" flex flex-col lg:flex lg:flex-row justify-between ">
-        <div class="flex pb-14 lg:pb-0 2xl:w-[481px] xl:w-[400px] lg:w-[300px] flex-col items-start gap-[20px]">
+      <div class=" flex flex-col lg:flex lg:flex-row justify-between  ">
+        <div class="flex pb-14 lg:pb-0 2xl:w-[481px] xl:w-[400px] lg:w-[300px] flex-col items-start  pr-[30px] gap-[40px] ">
           <img
             src={logo}
             alt="logo"
@@ -24,7 +24,7 @@ const Footer = () => {
             flavor experiences that drive consumer preference and loyalty.
           </span>
         </div>
-        <div class="flex flex-wrap lg:flex-none 2xl:w-[1021px] xl:w-[800px] lg:w-[600px] justify-between gap-[40px]">
+        <div class="flex flex-wrap lg:flex-none 2xl:w-[1021px] xl:w-[800px] lg:w-[600px] justify-between gap-[40px] pl-[20px]">
           <div class="flex flex-col items-start gap-[8px] self-stretch">
             <span class="text-[#262626] font-bold text-[16px] leading-normal font-dm-sans">
               Pages

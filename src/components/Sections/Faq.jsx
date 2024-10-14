@@ -25,7 +25,7 @@ const Faq = () => {
   return (
     <div ref={ref}>
       <div className="flex flex-col gap-[100px] lg:flex lg:flex-row justify-between pt-28 lg:gap-[30px] pb-[90px]">
-        <div>
+        <div className="w-full">
           <motion.p
             initial={{ opacity: 0, y: -100 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
@@ -63,6 +63,7 @@ const Faq = () => {
           initial={{ opacity: 0, y: 200 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
           transition={{ duration: 1 }}
+          className="w-full"
         >
           <Bar
             text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}

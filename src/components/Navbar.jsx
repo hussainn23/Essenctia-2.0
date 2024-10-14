@@ -32,8 +32,8 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="bg-[#fff] w-full flex flex-col md:flex md:flex-row justify-between items-center 2xl:px-[120px] md:gap-5 lg:gap-10  xl:px-[80px] lg:px-[50px] px-[30px]  py-[10px]">
-        <Link to="/" className="flex w-1/2 ">
+      <div className="bg-[#fff] w-full flex-end flex flex-col md:flex md:flex-row justify-between items-center 2xl:px-[120px] md:gap-5 lg:gap-10  xl:px-[80px] lg:px-[50px] px-[30px]  py-[10px]">
+        <Link to="/" className="flex w-1/2">
           <div className="py-5 md:py-0">
             <img
               src={logo}
@@ -42,7 +42,7 @@ const Navbar = () => {
             />
           </div>
         </Link>
-        <div className=" w-full flex">
+        <div className=" w-full flex ">
           <input
             type="text"
             name=""
@@ -68,8 +68,8 @@ const Navbar = () => {
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17a6 6 0 100-12 6 6 0 000 12zm0 0l6 6" />  
     </svg>   */}
 
-        <div className="flex w-full flex-end justify-center gap-5 lg:gap-[50px]  items-center mb-5 md:mb-0">
-          <div className="md:w-1/2 ">
+        <div className="flex w-full justify-center md:justify-end gap-5 lg:gap-[50px]   items-center mb-5 md:mb-0 ">
+          <div className=" ">
             <span className="text-[#393939] font-poppins xl:text-base font-normal 2xl:leading-[28px] md:text-[13px] 2xl:tracking-[3px]  capitalize">
               Call us for details
             </span>
@@ -81,7 +81,7 @@ const Navbar = () => {
             </div>
           </div>
           <span className="w-[1px] h-[29px] bg-[#A6A6A6]"></span>
-          <div className="flex justify-end gap-1 md:w-1/2">
+          <div className="flex justify-end gap-1 ">
             <Link
               to="https://www.facebook.com/essenctia"
               target="_blank"
@@ -106,7 +106,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <nav className="bg-[#FEA821] flex h-[57px] 2xl:px-[600px] xl:px-[400px] lg:px-[200px] md:px-[100px] 2xl:py-[16px] justify-between items-center flex-shrink-0">
+      <nav className="bg-[#FEA821] flex h-[57px] 2xl:px-[500px] xl:px-[400px] lg:px-[200px] md:px-[100px] 2xl:py-[16px] justify-between items-center flex-shrink-0">
         <div className="flex md:hidden items-center  ">
           <button
             onClick={toggleMenu}
