@@ -54,7 +54,7 @@ const Contact = () => {
   return (
     <div className=" xl:flex ">
       <ToastContainer />
-      <div className="w-full flex flex-col justify-center xl:flex xl:flex-row xl:justify-center mt-20 lg:mt-0  lg:pt-28 xl:pt-0 pb-20 xl:pb-0">
+      <div className="w-full flex flex-col justify-center xl:flex xl:flex-row xl:justify-center mt-20 lg:mt-0  lg:pt-28 xl:pt-0 pb-20 xl:pb-0 ">
         <div className=" pd md:px-20 lg:px-32 xl:px-0  flex items-center ">
           <img
             src={color}
@@ -79,8 +79,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex 2xl:justify-end xl:justify-center justify-center  w-full">
-        <div className=" pt-[60px]">
+      <div className="flex   justify-center  w-full ">
+        <div className=" pt-[60px]  w-full ">
           <p className="text-[#949494] font-inter text-[12px] md:text-[14px]  font-semibold leading-[14px] tracking-[2.6px] uppercase pb-2">
             CONTACT NOW
           </p>
@@ -88,21 +88,21 @@ const Contact = () => {
             Leave Us a Message
           </h4>
           <form ref={form} onSubmit={sendEmail}>
-            <div>
+            <div className=" w-full flex flex-col">
               <div className="w-full flex flex-col md:flex md:flex-row md:justify-between md:gap-7 pb-6 ">
                 <input
                   type="text"
                   name="first_name"
                   placeholder="First Name"
                   required
-                  className="inline-flex  h-[71px] md:h-[71px] pl-[30px] 2xl:pr-[290px] mb-6 md:mb-0 justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
+                  className="  h-[50px] md:h-[71px] pl-[30px]  mb-6 md:mb-0 justify-end items-center w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
                 />
                 <input
                   type="text"
                   name="last_name"
                   required
                   placeholder="Last Name"
-                  className="inline-flex  h-[71px] md:h-[71px] pl-[30px] 2xl:pr-[290px] justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
+                  className="  h-[50px] md:h-[71px]  pl-[30px]  justify-end items-center w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
                 />
               </div>
               <div>
@@ -111,13 +111,13 @@ const Contact = () => {
                   name="email"
                   placeholder="Email"
                   required
-                  className="inline-flex  h-[71px] md:h-[71px] pl-[30px] w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
+                  className="inline-flex  h-[50px] md:h-[71px]  pl-[30px] w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
                 />
                 <input
                   type="number"
                   name="phone"
                   placeholder="Phone Number"
-                  className="inline-flex  h-[71px] md:h-[71px] pl-[30px] w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
+                  className="inline-flex  h-[50px] md:h-[71px]  pl-[30px] w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
                 />
                 <textarea
                   p

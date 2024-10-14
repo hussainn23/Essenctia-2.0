@@ -30,24 +30,25 @@ const Navbar = () => {
   const dropdownPaths = ["/season", "/flavor", "/ingredient"];
   const isApplicationsActive = dropdownPaths.includes(location.pathname);
 
-
   return (
     <header>
-      <div className="bg-[#fff] w-full flex flex-col md:flex md:flex-row justify-between items-center 2xl:px-[120px] xl:px-[80px] lg:px-[50px] px-[30px]  py-[10px]">
-        <div className="py-5 md:py-0">
-          <img
-            src={logo}
-            alt="logo"
-            className="w-[130px] md:w-[150px] lg:w-auto"
-          />
-        </div>
-        <div>
+      <div className="bg-[#fff] w-full flex flex-col md:flex md:flex-row justify-between items-center 2xl:px-[120px] md:gap-5 lg:gap-10  xl:px-[80px] lg:px-[50px] px-[30px]  py-[10px]">
+        <Link to="/" className="flex w-1/2 ">
+          <div className="py-5 md:py-0">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-[130px] md:w-[150px] lg:w-auto"
+            />
+          </div>
+        </Link>
+        <div className=" w-full flex">
           <input
             type="text"
             name=""
             placeholder="Search for"
             id=""
-            className=" rounded-[40px] border border-[#A6A6A6] bg-[rgba(181,181,181,0.30)] mb-5 md:mb-0 2xl:w-[834px] xl:w-[500px] lg:w-auto h-[8px] md:h-[30px] lg:h-[42px] p-[21px_30px] text-[#717171] font-montserrat text-base font-medium leading-normal capitalize"
+            className=" rounded-[40px] border border-[#A6A6A6] bg-[rgba(181,181,181,0.30)] mb-5 md:mb-0  w-full h-[8px] md:h-[30px] lg:h-[42px] p-[21px_30px] text-[#717171] font-montserrat text-base font-medium leading-normal capitalize"
           />
         </div>
 
@@ -67,20 +68,20 @@ const Navbar = () => {
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17a6 6 0 100-12 6 6 0 000 12zm0 0l6 6" />  
     </svg>   */}
 
-        <div className="flex xl:gap-[50px] lg:gap-[40px] md:gap-[10px] gap-[20px] items-center mb-5 md:mb-0">
-          <div>
-            <span className="text-[#393939] font-poppins text-base font-normal xl:leading-[28px] xl:tracking-[5.46px] lg:tracking-[3px]  md:tracking-[1px] tracking-[0px] capitalize">
+        <div className="flex w-full flex-end justify-center gap-5 lg:gap-[50px]  items-center mb-5 md:mb-0">
+          <div className="md:w-1/2 ">
+            <span className="text-[#393939] font-poppins xl:text-base font-normal 2xl:leading-[28px] md:text-[13px] 2xl:tracking-[3px]  capitalize">
               Call us for details
             </span>
             <div className="flex gap-[10px]">
               <img src={contact} alt="phone" />
-              <span class="text-[#393939] font-poppins lg:text-lg md:text-sm font-semibold xl:leading-[28px] xl:tracking-[6.24px] lg:tracking-[4px] md:tracking-[1px] tracking-[0px] capitalize">
+              <span class="text-[#393939] font-poppins lg:text-md md:text-sm font-semibold 2xl:leading-[28px]  2xl:tracking-[4px]  capitalize">
                 +111 11111 111
               </span>
             </div>
           </div>
           <span className="w-[1px] h-[29px] bg-[#A6A6A6]"></span>
-          <div className="flex gap-1">
+          <div className="flex justify-end gap-1 md:w-1/2">
             <Link
               to="https://www.facebook.com/essenctia"
               target="_blank"
@@ -221,7 +222,7 @@ const Navbar = () => {
             >
               Home
             </Link>
-            
+
             <Link
               to="/about"
               className="text-black font-poppins text-sm font-normal leading-7 capitalize"

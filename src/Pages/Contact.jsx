@@ -108,7 +108,7 @@ const Contact = () => {
               type="text"
               name="first_name"
               placeholder="First Name"
-              className="h-[71px] pl-[30px] w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
+              className="h-[50px] md:h-[71px]  pl-[30px] w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
               required
             />
             <input
@@ -116,7 +116,7 @@ const Contact = () => {
               name="last_name"
               placeholder="Last Name"
               required
-              className="h-[71px] pl-[30px] w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
+              className="h-[50px] md:h-[71px]  pl-[30px] w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
             />
           </div>
 
@@ -126,7 +126,7 @@ const Contact = () => {
               name="email"
               placeholder="Email"
               required
-              className="inline-flex h-[71px] pl-[30px] 2xl:w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
+              className="inline-flex h-[50px] md:h-[71px]  pl-[30px] 2xl:w-full justify-end items-center flex-shrink-0 rounded-[5px] bg-[#F6F5F2] mb-6 focus:outline-none focus:border-none"
             />
 
             <input
@@ -134,7 +134,7 @@ const Contact = () => {
               name="phone"
               placeholder="Phone Number"
               required
-              className="h-[71px] pl-[30px] w-full rounded-[5px] mb-6 bg-[#F6F5F2] focus:outline-none focus:border-none"
+              className="h-[50px] md:h-[71px]  pl-[30px] w-full rounded-[5px] mb-6 bg-[#F6F5F2] focus:outline-none focus:border-none"
             />
 
             <textarea
