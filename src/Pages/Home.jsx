@@ -86,7 +86,7 @@ const Home = () => {
                 subHeading1={"Cheese Seasonings"}
                 subHeading2={"Achari"}
                 subHeading3={"Thai Chili"}
-                className="md:pt-0 pt-32"
+                className="card2"
               />
             </CardWrapper>
           </Link>
@@ -99,7 +99,7 @@ const Home = () => {
                 subHeading1={"Thickeners and Preservatives"}
                 subHeading2={"Acidity Regulators"}
                 subHeading3={"Sweeteners"}  
-                className="xl:pt-0 pt-32"
+                className="xl:pt-0 pt-32 card3"
               />
             </CardWrapper>
           </Link>

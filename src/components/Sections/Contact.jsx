@@ -54,7 +54,7 @@ const Contact = () => {
   return (
     <div className=" xl:flex ">
       <ToastContainer />
-      <div className="w-full flex flex-col justify-center xl:flex xl:flex-row xl:justify-center mt-20 lg:mt-0  lg:pt-28 xl:pt-0 pb-20 xl:pb-0 ">
+      <div className="w-full flex flex-col justify-center xl:flex xl:flex-row xl:justify-center mt-20 lg:mt-0  lg:pt-28 xl:pt-0 pb-20 xl:pb-0 animation-box">
         <div className=" pd md:px-20 lg:px-32 xl:px-0  flex items-center ">
           <img
             src={color}
@@ -95,14 +95,14 @@ const Contact = () => {
                   name="first_name"
                   placeholder="First Name"
                   required
-                  className="  h-[50px] md:h-[71px] pl-[30px]  mb-6 md:mb-0 justify-end items-center w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
+                  className="  h-[50px] md:h-[71px] pl-[30px] mb-6 md:mb-0 justify-end items-center w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
                 />
                 <input
                   type="text"
                   name="last_name"
                   required
                   placeholder="Last Name"
-                  className="  h-[50px] md:h-[71px]  pl-[30px]  justify-end items-center w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
+                  className="  h-[50px] md:h-[71px]  pl-[30px] justify-end items-center w-full rounded-[5px] bg-[#F6F5F2] focus:outline-none focus:border-none"
                 />
               </div>
               <div>

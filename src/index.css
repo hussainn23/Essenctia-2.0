@@ -216,3 +216,42 @@
     margin-top: 0; 
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .card3 {
+    margin-top: 8rem;
+  }
+}
+
+@media screen and (min-width: 1290px) {
+  .card3 {
+    margin-top: auto;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+  .card2 {
+    margin-top: 8rem; 
+  }
+}
+
+@media screen and (min-width: 541px) {
+  .card2 {
+    margin-top: 0; 
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .animation-box {
+    /* background: red; */
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1290px) {
+  .animation-box {
+    /* background: red; */
+    margin-right: 100px;
+  }
+}

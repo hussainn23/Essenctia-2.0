@@ -81,7 +81,7 @@ const Achievements = () => {
           </div>
         {/* </div> */}
       </div>
-      <div className="mb-20 w-full lg:mb-0 ">
+      <div className="mb-20 w-full lg:mb-0 color-animation">
         <motion.p
           className="text-[#FEA821] font-lexend text-[17px] font-semibold leading-[22.1px] text-left"
           initial={{ opacity: 0, y: -100 }}
@@ -128,7 +128,7 @@ const Achievements = () => {
           </div>
         </div>
         <div className="md:flex md:flex-row gap-5 flex flex-col items-center mt-6">
-          <div className="bg-[#2A2A2A] rounded-[10px] shadow-[0_10px_25px_0_rgba(0,0,0,0.10)] p-8 md:p-10 w-[250px] md:w-[349px]">
+          <div className="bg-[#2A2A2A] rounded-[10px] shadow-[0_10px_25px_0_rgba(0,0,0,0.10)] p-8 md:p-10 w-[250px] lg:w-[349px]">
             <div className="flex justify-between ">
               <h5 className="text-white font-lexend-deca text-[20px] font-bold leading-[26px]">
                 Our Vision
@@ -143,7 +143,7 @@ const Achievements = () => {
               long-term partnerships.
             </p>
           </div>
-          <div className="md:w-[349px]">
+          <div className="md:w-[250px]">
             <h6 className="text-[#070606] font-lexend text-[20px] font-bold leading-[26px] text-left">
               Special <br /> Achievements
             </h6>
