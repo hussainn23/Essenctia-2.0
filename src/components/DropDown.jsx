@@ -7,7 +7,7 @@ const DropDown = ({ onLinkClick }) => {
   return (
     <div className="absolute w-[1910px] h-[494px] flex justify-between items-center flex-shrink-0 border-t border-t-[#41BA90] px-20  bg-white shadow-md z-50">
       <div className="inline-flex h-[398px] items-start gap-[66px] flex-shrink-0">
-        <div className="flex w-[200px] flex-col items-start gap-[36px]">
+        <div className="flex w-full flex-col items-start gap-[36px]">
           <h3 className="text-[#454545] font-dm-sans text-[24px] font-normal leading-normal">
             Flavors
           </h3>
@@ -27,7 +27,13 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Dairy
             </p>
-            <Link to="/flavor" onClick={() => onLinkClick('/flavor')} className={({ isActive }) => (isActive ? 'cursor-pointer nav-link active' : 'nav-link')}>
+            <Link
+              to="/flavor"
+              onClick={() => onLinkClick("/flavor")}
+              className={({ isActive }) =>
+                isActive ? "cursor-pointer nav-link active" : "nav-link"
+              }
+            >
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All
@@ -51,7 +57,7 @@ const DropDown = ({ onLinkClick }) => {
           </div>
         </div>
         <div className="bg-[#7C7C7C] w-[1px] h-[323px]"></div>
-        <div className="flex w-[200px] flex-col items-start gap-[36px]">
+        <div className="flex w-full flex-col items-start gap-[36px]">
           <h3 className="text-[#454545] font-dm-sans text-[24px] font-normal leading-normal">
             Seasonings
           </h3>
@@ -74,7 +80,13 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Fajita
             </p>
-            <Link  className={({ isActive }) => (isActive ? 'cursor-pointer nav-link active' : 'nav-link')} to="/season" onClick={() => onLinkClick('/season')}>
+            <Link
+              className={({ isActive }) =>
+                isActive ? "cursor-pointer nav-link active" : "nav-link"
+              }
+              to="/season"
+              onClick={() => onLinkClick("/season")}
+            >
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All
@@ -98,7 +110,7 @@ const DropDown = ({ onLinkClick }) => {
           </div>
         </div>
         <div className="bg-[#7C7C7C] w-[1px] h-[323px]"></div>
-        <div className="flex w-[200px] flex-col items-start gap-[36px]">
+        <div className="flex w-full flex-col items-start gap-[36px]">
           <h3 className="text-[#454545] font-dm-sans text-[24px] font-normal leading-normal">
             Ingredients
           </h3>
@@ -118,7 +130,13 @@ const DropDown = ({ onLinkClick }) => {
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
               Anti-caking agents
             </p>
-            <Link  className={({ isActive }) => (isActive ? 'cursor-pointer nav-link active' : 'nav-link')} to="/ingredient" onClick={() => onLinkClick('/ingredient')}>
+            <Link
+              className={({ isActive }) =>
+                isActive ? "cursor-pointer nav-link active" : "nav-link"
+              }
+              to="/ingredient"
+              onClick={() => onLinkClick("/ingredient")}
+            >
               <span className="flex items-center gap-[16px] self-stretch">
                 <p className="text-[#FEA821] font-dm-sans text-[16px] font-bold">
                   Explore All
@@ -142,12 +160,14 @@ const DropDown = ({ onLinkClick }) => {
           </div>
         </div>
       </div>
-      <div className="flex gap-5">
-        <div>
-          <img src={img1} alt="imjg" className="rounded-lg " />
-        </div>
-        <div>
-          <img src={img2} alt="imjg" className="rounded-lg " />
+      <div className="img">
+        <div className="flex gap-5">
+          <div>
+            <img src={img1} alt="imjg" className="rounded-lg " />
+          </div>
+          <div>
+            <img src={img2} alt="imjg" className="rounded-lg " />
+          </div>
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <header>
       <div className="bg-[#fff] w-full flex-end flex flex-col md:flex md:flex-row justify-between items-center 2xl:px-[120px] md:gap-5 lg:gap-10  xl:px-[80px] lg:px-[50px] px-[30px]  py-[10px]">
-        <Link to="/" className="flex w-1/2">
+        <Link to="/" className="flex w-1/2 justify-center md:justify-start ">
           <div className="py-5 md:py-0">
             <img
               src={logo}
@@ -191,7 +191,7 @@ const Navbar = () => {
               <span className="absolute block w-1 h-1 bg-black left-1/2 transform -translate-x-1/2 bottom-[-4px]"></span>
             )}
             {isDropdownOpen && (
-              <div className="absolute left-[-960px] mt-3">
+              <div className="absolute left-[-990px] mt-3">
                 <DropDown />
               </div>
             )}

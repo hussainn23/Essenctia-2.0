@@ -165,13 +165,13 @@ const Carousel = () => {
           />
         ))}
       </div> */}
-      <div className="hidden md:block">
+      <div className="hidden md:block ">
         <motion.button
           key={currentSlide + totalSlides}
           initial={{ opacity: 0, x: -200 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2  flex justify-center items-center  rounded-full lg:w-[92px] md:w-[62px] lg:h-[92px] md:h-[62px] ml-5 border text-white border-white shadow-lg z-10 "
+          className="absolute left-0 top-1/2 transform -translate-y-1/2  lg:w-[92px] md:w-[62px] lg:h-[92px] md:h-[62px] flex justify-center items-center  rounded-full  ml-5 border text-white border-white shadow-lg z-10 "
           onClick={() =>
             setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides)
           }
@@ -196,7 +196,7 @@ const Carousel = () => {
           initial={{ opacity: 0, x: 200 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 rounded-full lg:w-[92px] md:w-[62px] lg:h-[92px] md:h-[62px] flex justify-center items-center mr-5 shadow-lg z-10 border text-white border-white"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2  rounded-full lg:w-[92px] md:w-[62px] lg:h-[92px] md:h-[62px] flex justify-center items-center mr-5 shadow-lg z-10 border text-white border-white"
           onClick={() => setCurrentSlide((prev) => (prev + 1) % totalSlides)}
         >
           <svg
