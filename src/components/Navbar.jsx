@@ -7,7 +7,7 @@ import yt from "../images/yt.png";
 import contact from "../images/contact.svg";
 import { Link, useLocation } from "react-router-dom";
 import DropDown from "./DropDown";
-import Drop1 from "./Drop1"; // Import Drop1 component
+import Drop1 from "./Drop1"; 
 import Drop2 from "./Drop2";
 import { AiFillCaretDown } from "react-icons/ai";
 
@@ -21,10 +21,9 @@ const Navbar = () => {
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
   const toggleMobileDropdown = () => {
-    setIsMobileDropdownOpen(!isMobileDropdownOpen); // Toggle dropdown on click
+    setIsMobileDropdownOpen(!isMobileDropdownOpen); 
   };
 
-  // Track window resize to update screen width
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
@@ -32,7 +31,6 @@ const Navbar = () => {
 
     window.addEventListener("resize", handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -54,7 +52,6 @@ const Navbar = () => {
   const dropdownPaths = ["/season", "/flavor", "/ingredient"];
   const isApplicationsActive = dropdownPaths.includes(location.pathname);
 
-  // Track window size to switch between DropDown and Drop1
   useEffect(() => {
     const handleResize = () => {
       setIsScreenSmall(window.innerWidth <= 1903);

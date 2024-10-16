@@ -5,7 +5,7 @@ import img2 from "../images/drop2.png";
 
 const DropDown = ({ onLinkClick }) => {
   return (
-    <div className="absolute w-[1910px] h-[494px] flex justify-between items-center flex-shrink-0 border-t border-t-[#41BA90] px-20  bg-white shadow-md z-50">
+    <div className="absolute w-[1908px] h-[494px] flex justify-between items-center flex-shrink-0 border-t border-t-[#41BA90] px-20  bg-white shadow-md z-50">
       <div className="inline-flex h-[398px] items-start gap-[66px] flex-shrink-0">
         <div className="flex w-full flex-col items-start gap-[36px]">
           <h3 className="text-[#454545] font-dm-sans text-[24px] font-normal leading-normal">

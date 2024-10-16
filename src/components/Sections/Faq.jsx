@@ -52,11 +52,11 @@ const Faq = () => {
             tellus, luctus nec <br /> ullamcorper mattis, pulvinar dapibus leo.
           </motion.p>
           <div className="pt-[30px]">
-            <Button
+            {/* <Button
               text={"View All"}
               padding="p-[4px_5px_4px_37px]"
               gap="gap-[14px]"
-            />
+            /> */}
           </div>
         </div>
         <motion.div
@@ -66,14 +66,23 @@ const Faq = () => {
           className="w-full"
         >
           <Bar
-            text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+            text={"What industries do you serve?"}
+            answer={
+              "We are dealing with B2B in food  industries like baking, beverage, confectionary , Snacks, Dairy and Non-Food industries like Pharmaceutical. "
+            }
           />
-          <Bar text={"Lorem ipsum dolor sit amet."} answer={"answe"} />
-          <Bar text={"Lorem ipsum dolor sit amet, consectetur."} />
-          <Bar text={"Lorem ipsum dolor."} />
-          <Bar text={"Can I Get Free Sample ?"} />
-          <Bar text={"How To Claim Guarantee ?"} />
-          <Bar text={"How This Can Work ?"} />
+          <Bar
+            text={"What types of products/services do you offer? "}
+            answer={
+              "We offers Flavors , colors , Seasoning , Food and Pharmaceutical Ingredients."
+            }
+          />
+          <Bar
+            text={"How do I contact customer support?"}
+            answer={
+              "Give the email of essenctia or and mentioned contact numbers."
+            }
+          />
         </motion.div>
       </div>
     </div>
