@@ -29,16 +29,13 @@ const Footer = () => {
             <span class="text-[#262626] font-bold text-[16px] leading-normal font-dm-sans">
               Pages
             </span>
-            <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
+            <Link to="/about" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               About Us
             </Link>
-            <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
+            <Link  to="/flavor" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               Applications & <br className="hidden xl:block" /> Solutions
             </Link>
-            <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
-              FAQs
-            </Link>
-            <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
+            <Link to="/contact" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               Contact
             </Link>
           </div>
@@ -46,13 +43,13 @@ const Footer = () => {
             <span class="text-[#262626] font-bold text-[16px] leading-normal font-dm-sans">
               Categories
             </span>
-            <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
+            <Link to="/flavor" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               Flavors
             </Link>
-            <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
+            <Link to="/season" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               Seasoning
             </Link>
-            <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
+            <Link to="/ingredient" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               Ingredients
             </Link>
           </div>

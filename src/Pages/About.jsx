@@ -43,6 +43,23 @@ const About = () => {
                 </p>
               </div>
             </div>
+            <div className="flex flex-col">
+              {/* <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]"> */}
+                <img
+                  src={img4}
+                  alt="user1"
+                  className=""
+                />
+              {/* </div> */}
+              <div className="pt-[50px] pb-[130px]">
+                <h5 className="text-[#06113C] text-center font-lexend-deca text-[25px] md:text-[39px] font-bold leading-[2.5px] md:leading-[32.5px]">
+                  Sheikh Usman Salem
+                </h5>
+                <p className="text-[#454545] text-center font-lexend-deca text-[16px] md:text-[26px] font-normal leading-[14px] md:leading-[24px] pt-[30px]">
+                  General Manager
+                </p>
+              </div>
+            </div>
 
             <div className="flex flex-col">
               {/* <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]"> */}
@@ -75,23 +92,6 @@ const About = () => {
                 </h5>
                 <p className="text-[#454545] text-center font-lexend-deca text-[16px] md:text-[26px] font-normal leading-[14px] md:leading-[24px] pt-[30px]">
                   Business Development <br /> Manager
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col">
-              {/* <div className="md:w-[372.942px] md:h-[372px] w-[270.942px] h-[270px] flex justify-center items-center flex-shrink-0 rounded-[47.089px] bg-[#FEA821]"> */}
-                <img
-                  src={img4}
-                  alt="user1"
-                  className=""
-                />
-              {/* </div> */}
-              <div className="pt-[50px] pb-[130px]">
-                <h5 className="text-[#06113C] text-center font-lexend-deca text-[25px] md:text-[39px] font-bold leading-[2.5px] md:leading-[32.5px]">
-                  Sheikh Usman Salem
-                </h5>
-                <p className="text-[#454545] text-center font-lexend-deca text-[16px] md:text-[26px] font-normal leading-[14px] md:leading-[24px] pt-[30px]">
-                  General Manager
                 </p>
               </div>
             </div>
