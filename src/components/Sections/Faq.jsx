@@ -42,7 +42,7 @@ const Faq = () => {
           >
             Featured Frequently Asked <br /> Question Service
           </motion.h4>
-          <motion.p
+          {/* <motion.p
             className="text-[#6E6E6E] font-lexend-deca text-[17px] font-normal leading-[25.5px] pt-[20px]"
             initial={{ opacity: 0, x: -400 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -400 }}
@@ -50,7 +50,7 @@ const Faq = () => {
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec <br /> ullamcorper mattis, pulvinar dapibus leo.
-          </motion.p>
+          </motion.p> */}
           <div className="pt-[30px]">
             {/* <Button
               text={"View All"}
