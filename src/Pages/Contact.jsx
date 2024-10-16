@@ -157,13 +157,14 @@ const Contact = () => {
       <div className="flex justify-center pb-[80px] px-[30px] lg:px-[120px]">
         <div className=" w-full md:h-[447px] h-[247px] flex-shrink-0 rounded-[30px] overflow-hidden">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509049!2d144.953736315318!3d-37.81720997975155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11c2f5%3A0x5045675218ceed20!2sMelbourne%20CBD%2C%20Victoria%2C%20Australia!5e0!3m2!1sen!2sus!4v1617321979647!5m2!1sen!2sus"
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13310.815424897658!2d74.28564904512924!3d31.50868396747745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39224c37b414c2f7%3A0xe30212c606ea580f!2sE-2%2C%20Al%20Qadir%20Heights%2C%20Garden%20Town%2C%20Lahore%204500%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1638138470545!5m2!1sen!2sus"  
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
-            title="Map"
+             title="Al Qadir Heights Map"
+
           />
         </div>
       </div>

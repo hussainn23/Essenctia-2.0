@@ -208,10 +208,9 @@ const Navbar = () => {
 
             {isDropdownOpen && (
               <div className="absolute left-0 mt-3">
-                {/* Conditionally render DropDown, Drop1, or Drop2 based on screen width */}
                 {screenWidth <= 983 ? (
-                  <Drop2 /> // Show Drop2 if screen is 983px or less
-                ) : screenWidth <= 1903 ? (
+                  <Drop2 />
+                ) : screenWidth <= 1919 ? (
                   <div className="absolute left-[-490px]">
                     <Drop1 />
                   </div>
@@ -261,7 +260,7 @@ const Navbar = () => {
             <button
               className={`flex justify-center items-center text-black font-poppins text-sm font-normal leading-7 capitalize ${
                 isMobileDropdownOpen ? "bg-transparent" : ""
-              }`} // Highlight button when dropdown is open
+              }`} 
               onClick={toggleMobileDropdown}
             >
               Applications & Solutions

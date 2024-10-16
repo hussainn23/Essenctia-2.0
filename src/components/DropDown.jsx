@@ -116,19 +116,10 @@ const DropDown = ({ onLinkClick }) => {
           </h3>
           <div className="flex flex-col items-start gap-[16px] self-stretch">
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
-              Thickeners and Preservatives
+            Food Ingredients
             </p>
             <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
-              Acidity Regulators
-            </p>
-            <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
-              Sweeteners
-            </p>
-            <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
-              Leavening Agents
-            </p>
-            <p className="text-black font-dm-sans text-[16px] font-normal leading-normal">
-              Anti-caking agents
+            Pharmaceutical Ingredients
             </p>
             <Link
               className={({ isActive }) =>
