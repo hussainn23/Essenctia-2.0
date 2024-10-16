@@ -12,18 +12,18 @@ const Compond = () => {
     0: {
       columns: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4",
       items: [
-        { number: "01", name: "Cola" },
-        { number: "02", name: "Ginesing" },
-        { number: "03", name: "Mango" },
-        { number: "04", name: "Pome" },
-        { number: "05", name: "Chicken" },
+        { number: "01", name: "Chicken" },
+        { number: "02", name: "Cola" },
+        { number: "03", name: "Ginesing" },
+        { number: "04", name: "Mango" },
+        { number: "05", name: "Pome" },
         { number: "06", name: "Red Bull" },
       ],
     },
   };
 
   const selectedContent = contentMap[selectedIndex];
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
