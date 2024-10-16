@@ -80,7 +80,13 @@ const Faq = () => {
           <Bar
             text={"How do I contact customer support?"}
             answer={
-              "Give the email of essenctia or and mentioned contact numbers."
+              <div>
+                <p><span className="font-bold">Contact Numbers:</span> 042-37882089, 0348-8000158</p>
+                <p>
+                  <span className="font-bold">Email:{" "}</span>
+                  <a href="mailto:Info@essenctia.com">Info@essenctia.com</a>
+                </p>
+              </div>
             }
           />
         </motion.div>
