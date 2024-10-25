@@ -66,15 +66,15 @@ const Faq = () => {
           className="w-full"
         >
           <Bar
-            text={"What industries do you serve?"}
+            text={"What Industries do you serve?"}
             answer={
-              "We are dealing with B2B in food  industries like baking, beverage, confectionary , Snacks, Dairy and Non-Food industries like Pharmaceutical. "
+              "We are dealing with B2B in food industries such as Baking, Beverage, Confectionery, Snacks, Dairy, and non-food industries like Pharmaceuticals. "
             }
           />
           <Bar
-            text={"What types of products/services do you offer? "}
+            text={"What types of Products/Services do you offer? "}
             answer={
-              "We offers Flavors , colors , Seasoning , Food and Pharmaceutical Ingredients."
+              "We offers Flavors , Colors , Seasoning , Food and Pharmaceutical Ingredients."
             }
           />
           <Bar
