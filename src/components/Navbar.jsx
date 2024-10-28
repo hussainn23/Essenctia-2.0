@@ -54,7 +54,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsScreenSmall(window.innerWidth <= 1903);
+      setIsScreenSmall(window.innerWidth <= 1910);
     };
 
     window.addEventListener("resize", handleResize);
@@ -205,9 +205,9 @@ const Navbar = () => {
 
             {isDropdownOpen && (
               <div className="absolute left-0 mt-3">
-                {screenWidth <= 983 ? (
+                {screenWidth <= 1290 ? (
                   <Drop2 />
-                ) : screenWidth <= 1919 ? (
+                ) : screenWidth <= 1910 ? (
                   <div className="absolute left-[-490px]">
                     <Drop1 />
                   </div>
@@ -297,6 +297,15 @@ const Navbar = () => {
                       onClick={toggleMenu}
                     >
                       Ingredients
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/componds"
+                      className="text-black font-poppins text-sm leading-6 transition duration-200 hover:font-bold px-10"
+                      onClick={toggleMenu}
+                    >
+                      Compounds
                     </Link>
                   </li>
                 </ul>

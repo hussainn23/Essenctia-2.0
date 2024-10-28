@@ -29,6 +29,14 @@ const Drop2 = () => {
             Ingredients
           </Link>
         </li>
+        <li>
+          <Link
+            to="/componds"
+           className="flex items-center text-black font-poppins text-sm hover:bg-gray-200 p-2 rounded"
+          >
+            Compounds
+          </Link>
+        </li>
       </ul>
     </div>
   );
