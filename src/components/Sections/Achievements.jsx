@@ -96,7 +96,7 @@ const Achievements = () => {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 400 }}
           transition={{ duration: 1 }}
         >
-          Essentia: Elevating Products with <br className="2xl:block hidden" />{" "}
+          Essenctia: Elevating Products with <br className="2xl:block hidden" />{" "}
           Exceptional Flavor Solutions
         </motion.h3>
         <p className="text-[#454545] font-lexend text-[16px] font-normal leading-[24px] text-left mt-2 ">

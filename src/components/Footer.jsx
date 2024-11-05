@@ -32,7 +32,7 @@ const Footer = () => {
             <Link to="/about" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               About Us
             </Link>
-            <Link  to="/flavor" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
+            <Link to="/flavor" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               Applications & <br className="hidden xl:block" /> Solutions
             </Link>
             <Link to="/contact" class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
@@ -58,7 +58,7 @@ const Footer = () => {
               Extras
             </span>
             <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
-              Privacy Polict
+              Privacy Policy
             </Link>
             <Link class="text-[#454545] font-normal text-[16.336px] leading-normal font-dm-sans">
               Terms and <br /> Conditions
@@ -98,7 +98,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex md:flex-row justify-between">
           <span className="text-[#747474] font-dm-sans text-[14px] font-normal leading-normal pb-3 md:pb-0">
-            © 2024 All Rights Reserved By Essentia{" "}
+            © 2024 All Rights Reserved By Essenctia{" "}
           </span>
           <span className="text-[#747474] font-dm-sans text-[14px] font-bold leading-normal">
             Terms & Conditions | Privacy Policy | Cookies Policy

@@ -244,19 +244,12 @@
 
 @media screen and (min-width: 1280px) {
   .animation-box {
-    /* background: red; */
     margin-right: 100px;
   }
 }
 
 @media screen and (min-width: 1290px) {
   .animation-box {
-    /* background: red; */
     margin-right: 100px;
   }
 }
-/* @media screen and (max-width: 2034px) {
-  .img{
-    display: none;
-  }
-} */
