@@ -16,15 +16,14 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <DropDown/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} /> 
+        <Route path="/about" element={<About />} />
         <Route path="/flavor" element={<Flavor />} />
-        <Route path="/season" element={<Season />} /> 
-        <Route path="/ingredient" element={<Ingredient />} /> 
-        <Route path="/componds" element={<Compond/>} /> 
+        <Route path="/season" element={<Season />} />
+        <Route path="/ingredient" element={<Ingredient />} />
+        <Route path="/componds" element={<Compond />} />
       </Routes>
       <Footer />
     </>
