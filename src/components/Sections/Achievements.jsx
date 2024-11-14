@@ -63,7 +63,8 @@ const Achievements = () => {
                 Trusted Clients
               </h6>
               <p className="text-[#6E6E6E] font-lexend text-[10px] md:text-[17px] font-normal leading-[15.5px] md:leading-[25.5px] text-left">
-                Lorem ipsum dolor sit <br className="md:block hidden" /> amet.
+                Food and <br className="md:block hidden" /> pharmaceutical <br className="md:block hidden" />
+                industries 
               </p>
             </motion.div>
             <div className="ml-[-80px] md:ml-[-135px]">

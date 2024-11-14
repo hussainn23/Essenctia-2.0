@@ -186,8 +186,8 @@ const Carousel = () => {
             <path
               d="M22.0501 1.30005L1.3501 22.0001L22.0501 42.7001"
               stroke="white"
-              stroke-width="1.15"
-              stroke-linecap="round"
+              strokeWidth="1.15"
+              strokeLinecap="round"
             />
           </svg>
         </motion.button>
@@ -209,8 +209,8 @@ const Carousel = () => {
             <path
               d="M0.949901 1.30005L21.6499 22.0001L0.949901 42.7001"
               stroke="white"
-              stroke-width="1.15"
-              stroke-linecap="round"
+              strokeWidth="1.15"
+              strokeLinecap="round"
             />
           </svg>
         </motion.button>
